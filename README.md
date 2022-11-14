@@ -1,5 +1,5 @@
 # Sourcify API
-Golang wrapper over Sourcify API. Library implements interaction with endpoints are described in the [Sourcisy docs](https://docs.sourcify.dev/docs/api/).
+Golang wrapper over Sourcify API. Library implements interaction with endpoints are described in the [Sourcify docs](https://docs.sourcify.dev/docs/api/).
 
 ## Install
 
