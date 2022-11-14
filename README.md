@@ -43,7 +43,7 @@ func (api *API) CheckByAddresses(ctx context.Context, addresses []string, chainI
 func (api *API) CheckAllByAddresses(ctx context.Context, addresses []string, chainIds []string) ([]CheckAllStatus, error)
 
 // GetFiles - Returns all verified sources from the repository for the desired contract address and chain, including metadata.json. Searches for full and partial matches.
-func (api *API) GetFiles(ctx context.Context, chainID, address string) ([]Sources, error)
+func (api *API) GetFiles(ctx context.Context, chainID, address string) (*Sources, error)
 
 // GetFilesFullMatch - Returns all verified sources from the repository for the desired contract address and chain, including metadata.json. Searches only for full matches.
 func (api *API) GetFilesFullMatch(ctx context.Context, chainID, address string) ([]File, error)
