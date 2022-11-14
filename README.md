@@ -1,9 +1,15 @@
 # Sourcify API
+
+[![Test Status](https://github.com/dipdup-net/sourcify-api/workflows/Tests/badge.svg)](https://github.com/dipdup-net/sourcify-api/actions?query=branch%3Amaster+workflow%3A%22Tests%22)
+[![made_with golang](https://img.shields.io/badge/made_with-golang-blue.svg)](https://golang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Go Reference](https://pkg.go.dev/badge/github.com/dipdup-net/sourcify-api.svg)](https://pkg.go.dev/github.com/dipdup-net/sourcify-api)
+
 Golang wrapper over Sourcify API. Library implements interaction with endpoints are described in the [Sourcify docs](https://docs.sourcify.dev/docs/api/).
 
 ## Install
 
-```go
+```bash
 go get github.com/dipdup-net/sourcify-api
 ```
 
