@@ -187,7 +187,7 @@ func (api *API) CheckAllByAddresses(ctx context.Context, addresses []string, cha
 }
 
 // GetFiles - Returns all verified sources from the repository for the desired contract address and chain, including metadata.json. Searches for full and partial matches.
-func (api *API) GetFiles(ctx context.Context, chainID, address string) ([]Sources, error) {
+func (api *API) GetFiles(ctx context.Context, chainID, address string) (*Sources, error) {
 	link, err := url.Parse(api.baseURL)
 	if err != nil {
 		return nil, err
@@ -196,9 +196,9 @@ func (api *API) GetFiles(ctx context.Context, chainID, address string) ([]Source
 	link = link.JoinPath(chainID)
 	link = link.JoinPath(address)
 
-	var response []Sources
+	var response Sources
 	err = api.get(ctx, link, &response)
-	return response, err
+	return &response, err
 }
 
 // GetFilesFullMatch - Returns all verified sources from the repository for the desired contract address and chain, including metadata.json. Searches only for full matches.
